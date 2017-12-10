@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class Colliders : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    private LevelManager myLevelManager;
+
+	void OnCollisiOnEnter2D(Collision2D collision)
+    {
+        print("Collision with " + collision.gameObject.name);
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        print("Trigger by " + collider.gameObject.name);
+        myLevelManager.LoadLevel("Win");
+    }
+        void Start ()
+    {
+        myLevelManager = GameObject.FindObjectOfType<LevelManager>();	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

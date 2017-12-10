@@ -117,6 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153838026}
   - component: {fileID: 153838025}
+  - component: {fileID: 153838027}
   m_Layer: 0
   m_Name: topCollider
   m_TagString: Untagged
@@ -162,6 +163,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153838027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153838024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3916dadfc173c414fad7d01d500fdd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelManager: {fileID: 0}
 --- !u!1 &808328544
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +186,7 @@ GameObject:
   - component: {fileID: 808328545}
   - component: {fileID: 808328548}
   - component: {fileID: 808328547}
+  - component: {fileID: 808328549}
   m_Layer: 0
   m_Name: P1
   m_TagString: Untagged
@@ -220,7 +234,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &808328546
 Transform:
@@ -229,7 +243,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808328544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.913, y: 0.232, z: 0}
+  m_LocalPosition: {x: -5.88, y: 0.34, z: 0}
   m_LocalScale: {x: 0.037883334, y: 0.32787877, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -280,6 +294,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &808328549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808328544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51571c6d58e74ad4fb1787074694d05b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBall: {fileID: 0}
 --- !u!1 &1228870707
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629784597}
   - component: {fileID: 1629784596}
+  - component: {fileID: 1629784598}
   m_Layer: 0
   m_Name: bottomCollider
   m_TagString: Untagged
@@ -417,12 +444,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1629784595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.5, z: 0}
+  m_LocalPosition: {x: 0, y: -5.4, z: 0}
   m_LocalScale: {x: 15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629784598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1629784595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3916dadfc173c414fad7d01d500fdd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelManager: {fileID: 0}
 --- !u!1 &1771664103
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +518,7 @@ SpriteRenderer:
   m_Size: {x: 5.94, y: 3.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1771664105
 Transform:
@@ -488,8 +527,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1771664103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.06, z: 0}
-  m_LocalScale: {x: 2.5160084, y: 2.6801784, z: 1}
+  m_LocalPosition: {x: -0.008, y: 0.015, z: 0}
+  m_LocalScale: {x: 2.522072, y: 2.7043853, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -505,6 +544,7 @@ GameObject:
   - component: {fileID: 1922065128}
   - component: {fileID: 1922065131}
   - component: {fileID: 1922065130}
+  - component: {fileID: 1922065132}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -552,7 +592,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 4.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1922065129
 Transform:
@@ -561,7 +601,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922065127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005, y: -0.015, z: 0}
+  m_LocalPosition: {x: 5.03, y: 0.56, z: 0}
   m_LocalScale: {x: 0.13313913, y: 0.12823637, z: 0.30737528}
   m_Children: []
   m_Father: {fileID: 0}
@@ -602,6 +642,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.05
+--- !u!114 &1922065132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1922065127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55273e40ea983be41a71903d7b7c98c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer1: {fileID: 0}
+  paddleToBallVector: {x: 0, y: 0, z: 0}
+  hasStarted: 0
+  randomX: 0
+  randomY: 0
 --- !u!1 &1951192702
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +669,7 @@ GameObject:
   - component: {fileID: 1951192703}
   - component: {fileID: 1951192706}
   - component: {fileID: 1951192705}
+  - component: {fileID: 1951192707}
   m_Layer: 0
   m_Name: P2
   m_TagString: Untagged
@@ -660,7 +717,7 @@ SpriteRenderer:
   m_Size: {x: 13.66, y: 7.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1951192704
 Transform:
@@ -720,3 +777,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.66, y: 7.68}
   m_EdgeRadius: 0
+--- !u!114 &1951192707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1951192702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1acade1dcad936c4f91948a1540b5248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBall: {fileID: 0}
