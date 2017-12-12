@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rd;
     public GameObject P1;
     public GameObject P2;
+    private float boundY = 4.7f;
 
     void Start()
     {
@@ -24,10 +25,12 @@ public class Ball : MonoBehaviour
 
         if (Mathf.Abs(this.transform.position.x) >= 11f)
         {
-           // CountScore.canAddScore = true;
+            // CountScore.canAddScore = true;
+            //CountScoreLevel2.canAddScoreLvl2 = true;
             this.transform.position = new Vector3(0f, 0f, 0f);
             StartCoroutine(Pause());
         }
+
     }
 
     IEnumerator Pause()

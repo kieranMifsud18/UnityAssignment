@@ -117,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 153838026}
   - component: {fileID: 153838025}
-  - component: {fileID: 153838027}
   m_Layer: 0
   m_Name: topCollider
   m_TagString: Untagged
@@ -133,8 +132,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 153838024}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_Material: {fileID: 6200000, guid: a3adf2d25ad839f4e8574e6e643644f5, type: 2}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -163,18 +162,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153838027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 153838024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3916dadfc173c414fad7d01d500fdd57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myLevelManager: {fileID: 0}
 --- !u!1 &808328544
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +221,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &808328546
 Transform:
@@ -305,7 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51571c6d58e74ad4fb1787074694d05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBall: {fileID: 0}
 --- !u!1 &1228870707
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1629784597}
   - component: {fileID: 1629784596}
-  - component: {fileID: 1629784598}
   m_Layer: 0
   m_Name: bottomCollider
   m_TagString: Untagged
@@ -420,8 +405,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 1629784595}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_Material: {fileID: 6200000, guid: a3adf2d25ad839f4e8574e6e643644f5, type: 2}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -450,18 +435,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1629784598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1629784595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3916dadfc173c414fad7d01d500fdd57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myLevelManager: {fileID: 0}
 --- !u!1 &1771664103
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +491,7 @@ SpriteRenderer:
   m_Size: {x: 5.94, y: 3.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &1771664105
 Transform:
@@ -592,7 +565,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 4.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &1922065129
 Transform:
@@ -621,7 +594,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -653,11 +626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55273e40ea983be41a71903d7b7c98c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayer1: {fileID: 0}
-  paddleToBallVector: {x: 0, y: 0, z: 0}
-  hasStarted: 0
-  randomX: 0
-  randomY: 0
+  P1: {fileID: 808328544}
+  P2: {fileID: 1951192702}
 --- !u!1 &1951192702
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +687,7 @@ SpriteRenderer:
   m_Size: {x: 13.66, y: 7.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &1951192704
 Transform:
@@ -751,7 +721,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &1951192706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -788,4 +758,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acade1dcad936c4f91948a1540b5248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBall: {fileID: 0}

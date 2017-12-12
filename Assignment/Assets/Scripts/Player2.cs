@@ -26,6 +26,11 @@ public class Player2 : MonoBehaviour {
         {
             pos.y = boundY;
         }
+        
+        else if (pos.y < -boundY)
+        {
+            pos.y = -boundY;
+        }
         transform.position = pos;
     }
 }
