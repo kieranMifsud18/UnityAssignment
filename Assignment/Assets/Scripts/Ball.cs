@@ -8,8 +8,8 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rd;
     public GameObject P1;
     public GameObject P2;
-    private float boundY = 4.7f;
-
+ 
+    
     void Start()
     {
         rd = GetComponent<Rigidbody2D>();
@@ -22,15 +22,30 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-
-        if (Mathf.Abs(this.transform.position.x) >= 11f)
+        // if ball goes to far left
+        if (transform.position.x < -16f)
         {
-            // CountScore.canAddScore = true;
-            //CountScoreLevel2.canAddScoreLvl2 = true;
+            //transform.position = Vector3.zero;
+            //rd.velocity = Vector3.zero;
+
+            //gives player 2 a point
+            AddScore.instance.GivePlayerTwoAPoint();
+
             this.transform.position = new Vector3(0f, 0f, 0f);
             StartCoroutine(Pause());
         }
+        //if ball goes to far right
+        if (transform.position.x > 16f)
+        {
+            //transform.position = Vector3.zero;
+            //rd.velocity = Vector3.zero;
 
+            //gives player 1 a point
+            AddScore.instance.GivePlayerOneAPoint();
+                 
+            this.transform.position = new Vector3(0f, 0f, 0f);
+            StartCoroutine(Pause());
+        }
     }
 
     IEnumerator Pause()
