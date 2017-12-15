@@ -25,9 +25,6 @@ public class Ball : MonoBehaviour
         // if ball goes to far left
         if (transform.position.x < -16f)
         {
-            //transform.position = Vector3.zero;
-            //rd.velocity = Vector3.zero;
-
             //gives player 2 a point
             AddScore.instance.GivePlayerTwoAPoint();
 
@@ -37,9 +34,6 @@ public class Ball : MonoBehaviour
         //if ball goes to far right
         if (transform.position.x > 16f)
         {
-            //transform.position = Vector3.zero;
-            //rd.velocity = Vector3.zero;
-
             //gives player 1 a point
             AddScore.instance.GivePlayerOneAPoint();
                  
