@@ -23,7 +23,7 @@ public class Ball : MonoBehaviour
     void Update()
     {
         // if ball goes to far left
-        if (transform.position.x < -16f)
+        if (transform.position.x < -12f)
         {
             //gives player 2 a point
             AddScore.instance.GivePlayerTwoAPoint();
@@ -32,11 +32,11 @@ public class Ball : MonoBehaviour
             StartCoroutine(Pause());
         }
         //if ball goes to far right
-        if (transform.position.x > 16f)
+        if (transform.position.x > 12f)
         {
             //gives player 1 a point
             AddScore.instance.GivePlayerOneAPoint();
-                 
+             
             this.transform.position = new Vector3(0f, 0f, 0f);
             StartCoroutine(Pause());
         }
