@@ -626,7 +626,13 @@ Prefab:
       propertyPath: playerTwoScoreText2
       value: 
       objectReference: {fileID: 1586199829}
-    m_RemovedComponents: []
+    - target: {fileID: 224777604110362728, guid: 118285f6e8c156d4ab61a2cc187ff9aa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -121.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114631747998631950, guid: 118285f6e8c156d4ab61a2cc187ff9aa, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 118285f6e8c156d4ab61a2cc187ff9aa, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1586199829 stripped
@@ -641,6 +647,27 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1586199828}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1586199831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1175028180455678, guid: 118285f6e8c156d4ab61a2cc187ff9aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1586199828}
+--- !u!114 &1586199832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586199831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fd0f18906ab84ea7e0aaca3b7330e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOneScoreText: {fileID: 1586199830}
+  playerTwoScoreText: {fileID: 1586199829}
+  playerOneScore: 0
+  playerTwoScore: 0
+  MaxPoints: 3
 --- !u!1001 &1671070560
 Prefab:
   m_ObjectHideFlags: 0
@@ -907,6 +934,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114712990407403988, guid: ffc6359e007c8d54b926acfb44b664c6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ffc6359e007c8d54b926acfb44b664c6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2127288370 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1697198037770312, guid: ffc6359e007c8d54b926acfb44b664c6,
+    type: 2}
+  m_PrefabInternal: {fileID: 2127288369}
+--- !u!114 &2127288371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127288370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c357a44a9e9f4419ec9a82e77b99e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1: {fileID: 0}
+  P2: {fileID: 0}

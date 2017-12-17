@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class AddScore : MonoBehaviour {
 
-    public static AddScore instance;
+public class AddScoreLv3 : MonoBehaviour {
+
+    public static AddScoreLv3 instance;
 
     public Text playerOneScoreText;
     public Text playerTwoScoreText;
@@ -13,37 +14,26 @@ public class AddScore : MonoBehaviour {
     public int playerOneScore;
     public int playerTwoScore;
     public int MaxPoints = 3;
- 
-     
-    void Start ()
-    {
 
+
+    void Start()
+    {
         instance = this;
 
         playerOneScore = playerTwoScore = 0;
-
-   
     }
-	
-    void Update ()
-    {
-        if(playerOneScore >= MaxPoints || playerTwoScore >= MaxPoints)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
 
-    }
-   
+
     public void GivePlayerOneAPoint()
     {
         playerOneScore += 1;
         playerOneScoreText.text = playerOneScore.ToString();
 
-        //enter player 1 wins level1
-        //if (playerOneScore > 2)
-        //{
-        //    SceneManager.LoadScene(2);
-        //}
+        //enter player 1 wins
+        if (playerOneScore >= MaxPoints)
+        {
+         SceneManager.LoadScene(4);
+         }
     }
 
     public void GivePlayerTwoAPoint()
@@ -51,10 +41,10 @@ public class AddScore : MonoBehaviour {
         playerTwoScore += 1;
         playerTwoScoreText.text = playerTwoScore.ToString();
 
-        //enter player 2 wins level1
-        //if (playerTwoScore > 2)
-        //{
-        //   SceneManager.LoadScene(2);
-        //}
+        //enter player 2 wins
+        if (playerTwoScore >= MaxPoints)
+        {
+           SceneManager.LoadScene(5);
+        }
     }
 }
