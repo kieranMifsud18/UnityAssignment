@@ -10,8 +10,8 @@ public class AddScore : MonoBehaviour {
     public Text playerOneScoreText;
     public Text playerTwoScoreText;
 
-    public int playerOneScore;
-    public int playerTwoScore;
+    public static int playerOneScore;
+    public static int playerTwoScore;
     public int MaxPoints = 3;
  
      
@@ -19,10 +19,6 @@ public class AddScore : MonoBehaviour {
     {
 
         instance = this;
-
-        playerOneScore = playerTwoScore = 0;
-
-   
     }
 	
     void Update ()
@@ -33,17 +29,11 @@ public class AddScore : MonoBehaviour {
         }
 
     }
-   
+  
     public void GivePlayerOneAPoint()
     {
         playerOneScore += 1;
         playerOneScoreText.text = playerOneScore.ToString();
-
-        //enter player 1 wins level1
-        //if (playerOneScore > 2)
-        //{
-        //    SceneManager.LoadScene(2);
-        //}
     }
 
     public void GivePlayerTwoAPoint()
@@ -51,10 +41,5 @@ public class AddScore : MonoBehaviour {
         playerTwoScore += 1;
         playerTwoScoreText.text = playerTwoScore.ToString();
 
-        //enter player 2 wins level1
-        //if (playerTwoScore > 2)
-        //{
-        //   SceneManager.LoadScene(2);
-        //}
     }
 }

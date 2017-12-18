@@ -20,7 +20,7 @@ public class AddScoreLv3 : MonoBehaviour {
     {
         instance = this;
 
-        playerOneScore = playerTwoScore = 0;
+        
     }
 
 
